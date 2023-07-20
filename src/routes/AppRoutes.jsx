@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import React from "react";
-import App from "../App";
+
 import LogInPage from "../pages/logInPage";
-import Rating from "../components/Rating";
+
 import EntryPage from "../pages/EntryPage";
 import Signup from "../components/Signup";
 import UserPage from "../pages/UserPage";
-import NotesPage from "../pages/NotesPage";
+
 import DisplayMoods from "../components/DisplayMoods";
 import GoalsPage from "../pages/GoalsPage";
 import AboutPage from "../pages/AboutPage";
