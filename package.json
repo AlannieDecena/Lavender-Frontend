@@ -11,7 +11,7 @@
   },
 
   "vite": {
-    "outDir": "dist"
+    "outDir": "build"
   },
 
   "dependencies": {
