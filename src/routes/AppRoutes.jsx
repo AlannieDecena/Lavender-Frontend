@@ -43,4 +43,4 @@ function AppRoutes(props) {
   );
 }
 
-export default AppRoutes
+export default AppRoutes;
