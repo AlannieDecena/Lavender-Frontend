@@ -1,5 +1,5 @@
 import React from "react"; // Import React library
-import LogInPage from "./logInPage"; // Import LogInPage component from local file
+import LogInPage from "./LogInPage"; // Import LogInPage component from local file
 import capLogo from "../images/capLogo.png" // Import image resource
 import { NavLink } from "react-router-dom"; // Import NavLink component from react-router-dom library
 
