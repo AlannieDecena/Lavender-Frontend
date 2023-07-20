@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react"; //importing React and other
 import { UserContext } from "../context/UserContext"; //importing the UserContext from the UserContext file
 import useFormInput from "../hooks/useFormInput"; //importing the useFormInput hook
 import axios from "axios"; //importing axios for making HTTP requests
-import { NavLink } from "react-router-dom"; //importing NavLink from react-router-dom for navigation
+
 import { useNavigate } from "react-router-dom"; //importing useNavigate from react-router-dom for navigation
 
 /* A component for logging in a user, which takes a props parameter */
