@@ -27,7 +27,7 @@ export default function LogIn(props) {
 
     //sending a post request to the server to check if the user exists and the password matches
     axios
-      .post("http://localhost:8001/user/login", { email, password })
+      .post("https://feelinglavender-api.onrender.com/user/login", { email, password })
       .then((response) => {
         let isLoggedIn = response.data.data.id; //getting the user id from the response
 

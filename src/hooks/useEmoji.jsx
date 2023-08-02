@@ -29,7 +29,7 @@ export default function useEmoji() {
         console.log(userCurrent.userCurrent.id)
         const moodData = {'mood': emoji, 'userId': userCurrent.userCurrent.id}  
         console.log(moodData) 
-        axios.post('http://localhost:8001/mood/update', moodData ) 
+        axios.post('https://feelinglavender-api.onrender.com/mood/update', moodData ) 
             .then(response => {
                 console.log(response.data); })
             .catch(error => { console.log(error) })};

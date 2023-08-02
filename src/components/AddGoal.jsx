@@ -16,7 +16,7 @@ export default function AddGoal({goals, setGoals}) { //defining a functional com
     };
     console.log(goalData); //printing goalData to consol
     axios
-      .post(`http://localhost:8001/goal/create`, goalData) //making a post request to http://localhost:8001/goal/create endpoint with goalData as payload
+      .post(`https://feelinglavender-api.onrender.com/goal/create`, goalData) //making a post request to https://feelinglavender-api.onrender.com/goal/create endpoint with goalData as payload
       .then((response) => {
         console.log(response.data.data); //printing the response to console
         setGoals([...goals, response.data.data]); //updating goals array state with new goal obtained from response

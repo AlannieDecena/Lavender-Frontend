@@ -23,7 +23,7 @@ export default function AddNote(props) {
     const noteData = { note: note, userId: userCurrent.id };
     //using axios to make a post request to the server to store the note data
     axios
-      .post("http://localhost:8001/note/create", noteData)
+      .post("https://feelinglavender-api.onrender.com/note/create", noteData)
       .then((response) => {
         //updating the notes state with the newly added note
         props.updateNotes([...props.notes, response.data.data]);

@@ -11,7 +11,7 @@ export default function NotesPage(props) {
   const {userCurrent} = useContext(UserContext) //get user information from UserContext
   useEffect(() => { //useEffect to fetch notes from API when component mounts
     console.log(userCurrent.id) //log user id to console
-    axios.get(`http://localhost:8001/note/user/${userCurrent.id}` ) //GET request to API endpoint for user notes
+    axios.get(`https://feelinglavender-api.onrender.com/note/user/${userCurrent.id}` ) //GET request to API endpoint for user notes
     .then(response => {
       setNotes(response.data.data) //update notes state with response data
       console.log(notes) //log notes to console
