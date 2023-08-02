@@ -18,7 +18,7 @@ export default function Signup(props) {
   useEffect(() => {
     console.log(`Fetching users`);
     axios
-      .get("http://localhost:8001/user/")
+      .get("https://feelinglavender-api.onrender.com/user/")
       .then((response) => {
         console.log(response.data);
         setUser(response.data);
@@ -43,7 +43,7 @@ export default function Signup(props) {
 
     // Sending a POST request to create the new user in the database
     axios
-      .post("http://localhost:8001/user/create", newUser)
+      .post("https://feelinglavender-api.onrender.com/user/create", newUser)
       .then((response) => {
         console.log(response);
         setNewUser(response.data).catch((error) => {

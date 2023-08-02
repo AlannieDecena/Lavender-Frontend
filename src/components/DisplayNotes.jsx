@@ -9,7 +9,7 @@ export default function DisplayNotes(props) {
     e.preventDefault();
 
     axios
-      .delete(`http://localhost:8001/note/delete/${noteId}`)
+      .delete(`https://feelinglavender-api.onrender.com/note/delete/${noteId}`)
       .then((response) => {
         const newList = props.notes.filter((note) => note.id !== noteId);
 
@@ -30,7 +30,7 @@ export default function DisplayNotes(props) {
       completed: now,
     };
     console.log(updateUser);
-    const axUsers = `http://localhost:8001/note/put/${id}`;
+    const axUsers = `https://feelinglavender-api.onrender.com/note/put/${id}`;
     axios
       .put(axUsers, updateUser)
       .then((response) => {

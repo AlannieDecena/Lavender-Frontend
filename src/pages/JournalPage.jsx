@@ -18,7 +18,7 @@ export default function JournalPage(props) {
   // Retrieving the notes for the current user on page load
   useEffect(() => {
     console.log(userCurrent.id)
-    axios.get(`http://localhost:8001/note/user/${userCurrent.id}` )
+    axios.get(`https://feelinglavender-api.onrender.com/note/user/${userCurrent.id}` )
     .then(response => {
       setNotes(response.data.data)
       console.log(notes)

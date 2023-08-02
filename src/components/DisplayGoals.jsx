@@ -13,7 +13,7 @@ export default function DisplayGoals({ goals, setGoals }) {
   useEffect(() => {
     console.log(userCurrent.id);
     axios
-      .get(`http://localhost:8001/goal/user/${userCurrent.id}`)
+      .get(`https://feelinglavender-api.onrender.com/goal/user/${userCurrent.id}`)
       .then((response) => {
         setGoals(response.data.data);
       });
@@ -30,7 +30,7 @@ export default function DisplayGoals({ goals, setGoals }) {
       completed: now,
     };
     console.log(updateUser);
-    const axUsers = `http://localhost:8001/goal/put/${id}`;
+    const axUsers = `https://feelinglavender-api.onrender.com/goal/put/${id}`;
     axios
       .put(axUsers, updateUser)
       .then((response) => {
@@ -54,7 +54,7 @@ export default function DisplayGoals({ goals, setGoals }) {
     e.preventDefault();
 
     axios
-      .delete(`http://localhost:8001/goal/delete/${id}`)
+      .delete(`https://feelinglavender-api.onrender.com/goal/delete/${id}`)
       .then((response) => {
         const updatedGoals =goals.filter((goal) => goal.id !== id);
 

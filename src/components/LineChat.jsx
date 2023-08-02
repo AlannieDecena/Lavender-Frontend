@@ -23,7 +23,7 @@ const LineChart = () => {
     // Fetching weekly mood data for the current user using an API call
     useEffect( () => {
     axios
-    .get(`http://localhost:8001/mood/weeklymood/${userCurrent.id}`)
+    .get(`https://feelinglavender-api.onrender.com/mood/weeklymood/${userCurrent.id}`)
     .then((response) => {
       // Setting the mood data state to the response data
       setMoodData(response.data.data);
